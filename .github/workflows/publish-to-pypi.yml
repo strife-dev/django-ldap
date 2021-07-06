@@ -16,6 +16,8 @@ jobs:
           pip install
           build
           --user
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: list directory
         run: >-
           ls .

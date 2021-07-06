@@ -17,7 +17,7 @@ for Django in coming updates.
 $ pip install django-ldap
 ~~~
 
-2. Add "django_ldap" to your INSTALLED_APPS setting
+2. Add "django_ldap" to your INSTALLED_APPS setting  
 ![installed_apps](documentation/img/installed_apps.png)
 
 3. Add "django_ldap.backend.LDAPBackend" as an AUTHENTICATION_BACKENDS i.e.

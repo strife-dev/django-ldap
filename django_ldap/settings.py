@@ -24,6 +24,7 @@ from django.utils.module_loading import import_string
 logger = logging.getLogger("django_ldap")
 
 DEFAULTS = {
+    "LDAP_DRIVER": "ldap3",  # currently only supports ldap3, eventually python-ldap
     "LDAP_HOST": "ldap://localhost:389",
     "LDAP_TLS": False,
     "LDAP_TLS_VALIDATE": ssl.CERT_OPTIONAL,

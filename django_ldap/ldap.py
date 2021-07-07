@@ -1,6 +1,7 @@
 from contextlib import contextmanager
 
 from ldap3 import Server, Tls, Connection
+from ldap3.utils import config
 
 from django_ldap.settings import logger, ldap_settings
 
@@ -8,6 +9,9 @@ from django_ldap.settings import logger, ldap_settings
 @contextmanager
 def ldap_connection(*args, **kwargs):
     logger.info("Creating LDAP connection")
+
+    for param, value in ldap_settings.LDAP_SET_LDAP3_ARGS.items():
+        config.set_config_parameter(param, value)
 
     tls_configuration = (
         Tls(

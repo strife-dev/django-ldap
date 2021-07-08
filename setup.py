@@ -1,9 +1,15 @@
 from setuptools import setup, find_packages
+from os import path
+
+this_directory = path.abspath(path.dirname(__file__))
+
+with open(path.join(this_directory, "readme.md"), encoding="utf-8") as f:
+    long_description = f.read()
 
 setup(
     name="django-ldap",
     description="Django LDAP3.",
-    long_description="file: readme.md",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     author="Strife-Dev",
     use_scm_version=True,

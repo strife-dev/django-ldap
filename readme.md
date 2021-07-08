@@ -18,7 +18,7 @@ $ pip install django-ldap
 ~~~
 
 2. Add "django_ldap" to your INSTALLED_APPS setting  
-![installed_apps](documentation/img/installed_apps.png)
+![installed_apps](https://raw.githubusercontent.com/strife-dev/django-ldap/main/documentation/img/installed_apps.png)
 
 3. Add "django_ldap.backend.LDAPBackend" as an AUTHENTICATION_BACKENDS i.e.
 
@@ -29,7 +29,7 @@ AUTHENTICATION_BACKENDS = [
     # ...
 ]
 ```
-![auth_backend](documentation/img/auth_backend.png)
+![auth_backend](https://raw.githubusercontent.com/strife-dev/django-ldap/main/documentation/img/auth_backend.png)
 
 4. Add the following configuration items to your settings.py as a minimum
 ```LDAP_HOST = "LDAP://<LDAP_SERVER_HOSTNAME>:<LDAP_SERVER_PORT>"```

@@ -46,7 +46,3 @@ jobs:
         uses: pypa/gh-action-pypi-publish@master
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
-https://raw:
-  githubusercontent:
-    com/strife-dev/django-ldap/main/documentation/img/installed_apps:
-      png:

@@ -31,6 +31,11 @@ jobs:
           --wheel
           --outdir dist/
           .
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          path: dist
+          retention-days: 5
 #      - name: Publish to Test PyPI
 #        uses: pypa/gh-action-pypi-publish@master
 #        with:
@@ -41,3 +46,7 @@ jobs:
         uses: pypa/gh-action-pypi-publish@master
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
+https://raw:
+  githubusercontent:
+    com/strife-dev/django-ldap/main/documentation/img/installed_apps:
+      png:
